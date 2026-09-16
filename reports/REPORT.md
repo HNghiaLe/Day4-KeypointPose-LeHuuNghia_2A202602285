@@ -30,31 +30,23 @@ Chúng có đúng là những khớp bạn thấy khó gán nhất không? Nếu
 
 ## 2. Chấm với gold
 
+## 2. Chấm với gold
 <!-- Lấy hai cột từ outputs/eval_vs_gold.json: một lần ngay khi protected release mở và một
 lần sau rework. Đếm số phần tử trong từng danh sách lỗi, không tự làm tròn. -->
-
 | Chỉ số | Trước rework | Sau rework |
 | --- | ---: | ---: |
-| OKS trung bình | | |
-| OKS@0.50 | | |
-| OKS@0.75 | | |
-| Lỗi `dao_trai_phai` | | |
-| Lỗi `nham_nguoi` | | |
-| Lỗi `xoa_khop_bi_che` | | |
-
+| OKS trung bình | 0.952 | 0.951 |
+| OKS@0.50 | 0.966 | 1.000 |
+| OKS@0.75 | 0.966 | 1.000 |
+| Lỗi `dao_trai_phai` | 0 | 0 |
+| Lỗi `nham_nguoi` | 0 | 0 |
+| Lỗi `xoa_khop_bi_che` | 0 | 0 |
 **Tôi đã sửa gì giữa hai lần chạy** (ghi cụ thể: ảnh nào, người thứ mấy, khớp nào):
-
 <!-- Mỗi dòng phải có: tên ảnh + người thứ mấy + keypoint + thao tác sửa. Không viết “đã sửa
 lại một số lỗi”. -->
-
--
--
--
-
-**Lỗi đảo trái/phải của tôi xảy ra ở ảnh nào?** Ảnh đó dễ hay khó? Nếu là ảnh dễ,
-bạn nghĩ vì sao mình vẫn sai?
-
-<!-- Nếu không có lỗi, ghi rõ “Không có lỗi đảo trái/phải trong toàn bộ 20 ảnh.” -->
+- `train_13.jpg` + người thứ 1 + toàn bộ cơ thể: Đã gán bổ sung thêm 1 skeleton bị bỏ sót. Điểm OKS@0.50 và OKS@0.75 đều đạt mức hoàn hảo tuyệt đối 1.000.
+**Lỗi đảo trái/phải của tôi xảy ra ở ảnh nào?** Ảnh đó dễ hay khó? Nếu là ảnh dễ, bạn nghĩ vì sao mình vẫn sai?
+Không có lỗi đảo trái/phải trong toàn bộ 20 ảnh.
 
 ## 3. Kiểm chéo
 
